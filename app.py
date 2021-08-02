@@ -90,16 +90,15 @@ def main():
     
     if st.sidebar.button('Obtenir des recommandations'):
 
-        cache_path = '/tmp/cache-{}'.format(username)
-        st.write(cache_path)
-        auth_manager=SpotifyOAuth(username=username, client_id=SPOTIPY_CLIENT_ID,client_secret=SPOTIPY_CLIENT_SECRET,redirect_uri=SPOTIPY_REDIRECT_URI,scope=scope,cache_path=cache_path,open_browser=False,show_dialog=False)
-        scope="playlist-modify-public"
+#         cache_path = '/tmp/cache-{}'.format(username)
+#         st.write(cache_path)
+#         auth_manager=SpotifyOAuth(username=username, client_id=SPOTIPY_CLIENT_ID,client_secret=SPOTIPY_CLIENT_SECRET,redirect_uri=SPOTIPY_REDIRECT_URI,scope=scope,cache_path=cache_path,open_browser=False,show_dialog=False)
+#         scope="playlist-modify-public"
 
-#         print( "auth_manager.get_authorize_url() : {}".format(auth_manager.get_authorize_url() ))
+# #         print( "auth_manager.get_authorize_url() : {}".format(auth_manager.get_authorize_url() ))
 
-        sp = spotipy.Spotify(auth_manager=auth_manager)
-        st.write("alleluiah")
-        token = util.prompt_for_user_token(username,"playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private",client_id=SPOTIPY_CLIENT_ID,client_secret=SPOTIPY_CLIENT_SECRET,redirect_uri='https://spotidiscovery.herokuapp.com/')
+#         sp = spotipy.Spotify(auth_manager=auth_manager)
+#         st.write("alleluiah")
 #         sp = spotipy.Spotify(auth=token)
 #         st.write("coucou")
         #token = util.prompt_for_user_token(username,scope,client_id=SPOTIPY_CLIENT_ID,client_secret=SPOTIPY_CLIENT_SECRET,redirect_uri=SPOTIPY_REDIRECT_URI,show_dialog=True,cache_path=cache_path, open_browser=True)
@@ -116,7 +115,7 @@ def main():
 #             sp.trace = False
 
 
-
+        st.write(<a href="https://someapp.herokuapp.com/auth">Login to Spotify</a>,unsafe_allow_html=True)
 
 
 
