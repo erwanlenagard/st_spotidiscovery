@@ -1,1 +1,1 @@
-# st_spotidiscovery
+# st-Spotify
