@@ -115,7 +115,7 @@ def main():
 #             sp.trace = False
 
 
-        st.write(<a href="https://someapp.herokuapp.com/auth">Login to Spotify</a>,unsafe_allow_html=True)
+        st.write("<a href=\"https://oauthspotidiscovery.herokuapp.com/\">Login to Spotify</a>",unsafe_allow_html=True)
 
 
 
